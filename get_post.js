@@ -2,7 +2,7 @@ $(document).ready(function() {
 $("input[type=radio]").change(function() {
 var method = $(this).val();
 $("#form").attr("method", method); // Assigns Method Type From Radio Button
-});
+
 // Function Executes On Submit Button's Click
 $("#submit").click(function() {
 var fname = $("#fname").val();
