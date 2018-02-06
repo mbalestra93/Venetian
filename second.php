@@ -9,12 +9,3 @@ echo "First Name : ".$fname."<br/>Last Name : ".$lname;
 }
 ?>
 <!--  This code will execute when form method is set to GET  -->
-<?php
-if(isset($_GET['fname']))
-{
-$fname = $_GET['fname'];
-$lname = $_GET['lname'];
-echo "<span class='success'>Form Submitted By <b>GET METHOD</b></span><br/>";
-echo "First Name : ".$fname."<br/>Last Name : ".$lname;
-}
-?>
