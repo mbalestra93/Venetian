@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PHP GET and POST Method Example</title>
+<title>Form</title>
 <!-- Include CSS  File Here-->
 <link rel="stylesheet" href="css/style.css"/>
 <!-- Include JavaScript File Here-->
@@ -10,17 +10,24 @@
 <script type="text/javascript" src="get_post.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container2">
 <div class="main">
 <form method="post" action="#" id="form">
-<h2>PHP GET and POST Method Example</h2>
-<label>Select Form Method :</label>
-<span><input type="radio" name="method" value="post"> POST
-<input type="radio" name="method" value="get"> GET </span>
-<label>First Name :</label>
+<label>Modulo Richiesta:</label>
+<p></p>
+<label>Nome :</label>
 <input type="text" name="fname" id="fname" />
-<label>Last Name :</label>
+<label>Cognome :</label>
 <input type="text" name="lname" id="lname" />
+<p></p>
+<span><input type="radio" name="method" value="Frames"> Modulo Frames
+<input type="radio" name="method" value="Reflections"> Modulo Reflections
+<input type="radio" name="method" value="Complete"> Modulo Completo
+<input type="radio" name="method" value="Free"> Modulo Free
+</span>
+<p></p>
+<label>Email :</label>
+<input type="text" name="mailc" id="mailc" />
 <input type="submit" name="submit" id="submit" value="Submit">
 </form>
 <?php include "second.php";?>
