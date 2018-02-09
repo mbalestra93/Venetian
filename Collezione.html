@@ -8,7 +8,7 @@
 	<title> Venetian | Homepage</title>
 	<link rel="stylesheet" href="Sito CSS.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 		<!-- navbar -->
@@ -119,6 +119,7 @@
 
 
 
+	<!-- *Price Tag* -->
 	<div class="container text-black fillHorizontal jtMargin smPadding">
 	<div class="row">
 		<div class="col-sm-3">
@@ -134,7 +135,7 @@
 				<li class="list-group-item">Ognuno di 13 soggetti</li>
 				<li class="list-group-item">1 Miniposter</li>
 				<li class="list-group-item">Totale: 26 soggetti</li>
-				<li class="list-group-item"><a class="buttonstyle2">Compralo Ora!</a></li>
+				<li class="list-group-item"><button class="buttonstyle2" data-toggle="collapse" href="#formcollapse2">Compralo Ora!</button></li>
 			</ul>
 		</div>
 		</div>
@@ -152,7 +153,7 @@
 				<li class="list-group-item">1 kit 'Venetian Reflections'</li>
 				<li class="list-group-item">1 Miniposter</li>
 				<li class="list-group-item">Totale: 34 soggetti</li>
-				<li class="list-group-item"><a class="buttonstyle">Compralo Ora</a></li>
+				<li class="list-group-item"><button class="buttonstyle2" data-toggle="collapse" href="#formcollapse2">Compralo Ora!</button></li>
 			</ul>
 		</div>
 		</div>
@@ -170,7 +171,7 @@
 			<li class="list-group-item">Ognuno di 21 soggetti</li>
 			<li class="list-group-item">1 Miniposter</li>
 			<li class="list-group-item">Totale: 42 soggetti</li>
-			<li class="list-group-item"><a class="buttonstyle2">Compralo Ora!</a></li>
+			<li class="list-group-item"><button class="buttonstyle2" data-toggle="collapse" href="#formcollapse2">Compralo Ora!</button></li>
 		</ul>
 	</div>
 	</div>
@@ -190,21 +191,72 @@
 			<li class="list-group-item">5 soggetti a scelta</li>
 			<li class="list-group-item">10 copie cadauno</li>
 			<li class="list-group-item">Totale: 50 soggetti</li>
-			<li class="list-group-item"><a class="buttonstyle2">Compralo Ora!</a></li>
+			<li class="list-group-item"><button class="buttonstyle2" data-toggle="collapse" href="#formcollapse2">Compralo Ora!</button></li>
 		</ul>
 	</div>
 	</div>
 	</div>
 	<small class="text-center"> Nota - Tutti i prezzi indicati sono al netto di I.V.A. e franco partenza.</small>
 	</div>
+
+	<!-- form -->
+
+	<div class="container text-center collapse" id="formcollapse2">
+	<div class="main">
+	<form method="post" action="#" id="form">
+	<label><h3>Modulo Richiesta:</h3></label>
+	<p></p>
+
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-default">Nome e Cognome</span>
+	  </div>
+	  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+	</div>
+
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <label class="input-group-text" for="inputGroupSelect01">Selezione Modulo:</label>
+	  </div>
+	  <select class="custom-select" id="inputGroupSelect01">
+	    <option selected>Scegli Modulo...</option>
+	    <option value="1">Modulo Reflections</option>
+	    <option value="2">Modulo Completo</option>
+	    <option value="3">Modulo Frames</option>
+	    <option value="3">Modulo a Scelta</option>
+	  </select>
+	</div>
+
+	<p></p>
+
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">@</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="example@mail.com" aria-label="Username" aria-describedby="basic-addon1" name="mailc" id="mailc">
+	</div>
+
+	<div class="input-group">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Commenti Aggiuntivi</span>
+	  </div>
+	  <textarea name="commenti" id="comm" class="form-control" placeholder="Inserire eventuali commenti" aria-label="With textarea"></textarea>
+	</div>
+	<p></p>
+	<a class="buttonstyle2 text-white">Compralo Ora!</a>
+	<p></p>
+	</form>
+	<?php include "second.php";?>
+	</div>
+	</div>
 		<!-- footer -->
 		<footer class="text-black palette-1 text-center">
 			<span><small>Copyright 2017 -  All rights reserved.</small></span>
 		</footer>
 		<script type="text/javascript" src="http://www.designbootstrap.com/livedemos/2015/02/04/pink/assets/js/jquery.isotope.js"></script>
-		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="Sito JS.js"></script>
 
 	</body>

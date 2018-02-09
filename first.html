@@ -27,7 +27,21 @@
 </span>
 <p></p>
 <label>Email :</label>
-<input type="text" name="mailc" id="mailc" />
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="example@mail.com" aria-label="Username" aria-describedby="basic-addon1" name="mailc" id="mailc">
+</div>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Commenti Aggiuntivi</span>
+  </div>
+  <textarea name="commenti" id="comm" class="form-control" placeholder="Inserire eventuali commenti aggiuntivi" aria-label="With textarea"></textarea>
+</div>
+
 <input type="submit" name="submit" id="submit" value="Submit">
 </form>
 <?php include "second.php";?>
